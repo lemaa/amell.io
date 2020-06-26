@@ -1,15 +1,8 @@
 import React  from 'react';
 import City from '../Base/City';
 import Avatar from '../Avatar';
+import Library from '../Library';
 import {
-    Library,
-    LibraryFacade,
-    LibrarySideFacade,
-    HouseDoor,
-    FrontDoor,
-    HouseWindow,
-    HouseContent,
-    Doorknob,
     ResumeS
 } from './Resume';
 
@@ -25,32 +18,8 @@ const Resume = () => {
     return(
 
         <City>
-            <Library className="Library">
-
-            <LibrarySideFacade className="two">
+            <Library position={{left:'1.5em'}} />
  
-                <HouseWindow form="cube" bottom="3em"  width="2.5em">
-                    <div className="vertical"></div>
-                </HouseWindow>
-                <HouseWindow form="cube" bottom="1em"  width="2.5em">
-                    <div className="vertical"></div>
-                </HouseWindow>
-            </LibrarySideFacade>
-                <LibraryFacade className="one">
-                    <HouseContent>Library</HouseContent>
-                    <HouseDoor>
-                        <FrontDoor className="frontdoor">
-                            <Doorknob></Doorknob>
-                        </FrontDoor>
-                    </HouseDoor>
-                    <HouseWindow form="cube" bottom="4em"  width="4em">
-                        <div className="vertical"></div>
-
-                    </HouseWindow>
- 
-                </LibraryFacade>
-
-            </Library>
             <Avatar/> 
             <ResumeS>
                 <div className="resume">
