@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes ,css} from 'styled-components';
 
 const movingDefault = keyframes`
 
@@ -34,19 +34,17 @@ const movingMobile = keyframes`
     }
 `;
  
-
-const Amell = styled.div`
-    left: -13.5em;
+const AvatarSection = styled.div`
+    left: ${props => props.animation ===true ? '-13.5em' : '9em'};  
     position: relative;
     top: 2em;
     z-index: 9;
-    transform: scale(0.4);
-    opacity: 0;
-     animation: ${movingDefault} 4s 1 forwards 2s;
-
-     @media (max-width: 768px) {
-        left: -3em;  
-        animation: ${movingMobile} 2s 1 forwards 2s;
+    transform: ${props => props.animation ===true ? 'scale(0.4)' : 'scale(1)'};  
+    opacity: ${props => props.animation ===true ? '0' : '1'};
+    animation: ${props => props.animation ===true ? css`4s 1 forwards 2s ${movingDefault}` : 'none'};
+    @media (max-width: 768px) {
+        left: ${props => props.animation ===true ? '-3em' : '9em'};  
+        animation: ${props => props.animation ===true ?  css`4s 1 forwards 2s ${movingMobile}` : 'none'};
     }
  `;
 const AvatarHead = styled.div`
@@ -298,7 +296,7 @@ const Foot = styled.div`
     }
  `;
 export{
-    Amell,
+    AvatarSection,
     AvatarHead,
     Hair,
     Ears,

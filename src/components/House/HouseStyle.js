@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
 
 const smokeL = keyframes`
     0% {
@@ -41,9 +41,13 @@ const doorOpen = keyframes`
     }
 `;
 
-const House = styled.div`
+const HouseSection = styled.div`
     position: relative;
-    left: 1.5em;
+    left: ${props => props.position.left ? props.position.left : 'unset'};  
+    right: ${props => props.position.right ?  props.position.right  : 'unset'}; 
+    top: ${props => props.position.top ? props.position.top : 'unset'};  
+    bottom: ${props => props.position.bottom ? props.position.bottom : 'unset'};  
+    margin: ${props => props.position.margin ? props.position.margin : 'unset'}; 
  `;
 const HouseRoof = styled.div`
     display: block;
@@ -70,13 +74,14 @@ const HouseFacade = styled.div`
     border-bottom: 5px solid #583f22;
     top: 1em;  
   `;
-  const HouseContent = styled.div`
+const HouseContent = styled.div`
     left: 2em;
     top: -12px;
     position: relative;
     text-transform: uppercase;
     font-family: MuseoModernoBold;
-    color: #825113;
+    color: #FFFFFF;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #f4951b, 0 0 30px #f4951b, 0 0 40px #f4951b, 0 0 55px #f4951b, 0 0 75px #f4951b;
   `;
 const HouseDoor = styled.div` 
     display: block;
@@ -100,7 +105,9 @@ const FrontDoor= styled.div`
     right: 0;
     transform-origin: left;
     z-index: 9999;
-    animation: ${doorOpen} 1s 1 forwards 1s;
+    animation: ${props => props.animation ===true ?  css`${doorOpen} 1s 1 forwards 1s` : 'none'};
+
+    
 `;
 const Doorknob = styled.div` 
     display: block;
@@ -225,7 +232,7 @@ const Smoking = styled.div`
     }
 `;
 export{
-    House,
+    HouseSection,
     HouseRoof,
     HouseFacade,
     HouseContent,

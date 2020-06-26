@@ -1,7 +1,7 @@
-import React  from 'react';
- 
+import React, { useState } from "react";
+import { PropTypes } from 'prop-types'; 
 import {
-    Amell,
+    AvatarSection,
     AvatarHead,
     Hair,
     Ears,
@@ -14,12 +14,15 @@ import {
     Tshirt,
     Hands,
     Foot
-} from './Avatar';
+} from './AvatarStyle';
 
-const Avatar = () => {
+const Avatar = (props) => {
 
-    return(
-        <Amell className="avatar"> 
+    const [animation] = useState(props.animation);
+    const [position] = useState(props.position); //not done yet
+
+     return(
+        <AvatarSection position={position} animation={animation}> 
              <AvatarHead>
                 <Hair>
 			        <span className="right-side-fringe"></span>
@@ -43,10 +46,20 @@ const Avatar = () => {
                     <span className="feet-2"></span>
                  </Foot>
              </AvatarBody>
-        </Amell>
+        </AvatarSection>
     );
 }
 
+Avatar.propTypes = {
+    position: PropTypes.shape({
+      top: PropTypes.string,
+      left: PropTypes.string,
+      right: PropTypes.string,
+      bottom: PropTypes.string,
+      margin: PropTypes.string
+    }),
+    animation: PropTypes.bool
+   };
 export default Avatar;
 
  

@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
  
 const display = keyframes`
     from{
@@ -9,7 +9,7 @@ const display = keyframes`
 
     }
 `;
-const About = styled.div`
+const ContentSection = styled.div`
     float: left;
     padding: 7px;
     background: rgba(242, 249, 254, 0.88);
@@ -20,8 +20,14 @@ const About = styled.div`
     left: 8em;
     top: -11em;
     width: 70%;
-    opacity: 0;
-    animation: ${display} 2s 1 forwards 3s;
+    opacity: ${props => props.animation === true ? '0' : '1'};
+    animation: ${props => props.animation === true ? css`${display} 1s 1 forwards` : 'none'};
+    animation-delay: ${props =>  props.animationStartDelay ? props.animationStartDelay: '0s'};
+    font-family: MuseoModerno;
+    line-height: 1.7em;
+    letter-spacing: 0.5px;
+    text-align: center;
+    min-height: 10em;
 
     &::after{
 	    content: ' ';
@@ -31,9 +37,9 @@ const About = styled.div`
 	    left: 3em;
         right: auto;
         top: auto;
-	    bottom: -20px;
+	    bottom: -24px;
 	    border: 12px solid;
-	    border-color: #f2f9fe transparent transparent #f2f9fe;
+	    border-color: rgba(242,249,254,0.88) transparent transparent rgba(242,249,254,0.88);
     }
     @media (max-width: 768px) {
         left: 1em;
@@ -45,14 +51,7 @@ const About = styled.div`
         }
     }
  `;
-const WelcomText = styled.div`
-    font-family: MuseoModerno;
-    line-height: 1.7em;
-    letter-spacing: 0.5px;
-    text-align: center;
-  `;
  
 export{
-    About,
-    WelcomText
+    ContentSection
 }

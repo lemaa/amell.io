@@ -11,7 +11,7 @@ import {
     HouseContent,
     Doorknob,
     ResumeS
-} from './Resume';
+} from './LibraryStyle';
 
 
 const portfolioLogo = require('../../images/portfolio.png');
