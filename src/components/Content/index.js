@@ -7,6 +7,7 @@ import {
 
 const Content = (props) => {
     
+    const [position] = useState(props.position);
     const [animation] = useState(props.animation);
     const [animationStartDelay] = useState(props.animationStartDelay);
     const [typingStartDelay] = useState(props.typingStartDelay);
@@ -17,7 +18,7 @@ const Content = (props) => {
     const onFinishedTyping = () => setFinishedTyping(true);
 
 return(
-        <ContentSection  animation ={animation} animationStartDelay={animationStartDelay} > 
+        <ContentSection  animation ={animation} animationStartDelay={animationStartDelay} position={position}> 
             {textMessage && 
                 <Typing startDelay={typingStartDelay} speed={typingSpeed} onFinishedTyping={onFinishedTyping} >
                     {textMessage}
@@ -28,6 +29,13 @@ return(
 }
 
 Content.propTypes = {
+    position: PropTypes.shape({
+        top: PropTypes.string,
+        left: PropTypes.string,
+        right: PropTypes.string,
+        bottom: PropTypes.string,
+        margin: PropTypes.string
+    }),
     typingStartDelay: PropTypes.number,
     typingSpeed: PropTypes.number,
     animationStartDelay: PropTypes.number,

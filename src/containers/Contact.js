@@ -10,10 +10,11 @@ const Contact = () => {
     const textMessage = "If you wanna get in touch, talk to me about a work or just say hi you can reach me on one of these:";
    
     return(
+        
         <City>
             <Telephone  position={{left:'1.5em'}}/>
             <Avatar move={false}/> 
-            <Content typingStartDelay={0} textMessage={textMessage} typingSpeed={100} >
+            <Content typingStartDelay={0} textMessage={textMessage} typingSpeed={100} position={{left: '8em', top: '-11em'}}>
                 <SocialLinks email={true} skype={true} linkedin={true} facebook={true}></SocialLinks>
             </Content>
         </City>

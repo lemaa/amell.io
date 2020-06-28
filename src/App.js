@@ -9,7 +9,7 @@ import {
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Home from './containers/Home';
 import Contact from './containers/Contact';
-import ResumeContainer from './containers/ResumeContainer';
+import Resume from './containers/Resume';
 import { Global } from './Style';
 
 const AnimatedSwitch = withRouter(({ location }) => (
@@ -18,7 +18,7 @@ const AnimatedSwitch = withRouter(({ location }) => (
         <Switch location={location}>
           <Route path="/" component={Home} exact />
           <Route path="/contact" component={Contact} />
-          <Route path="/resume" component={ResumeContainer} />
+          <Route path="/resume" component={Resume} />
           {/* <Route path="/resume" component={NotFound} /> */}
         </Switch>
       </CSSTransition>

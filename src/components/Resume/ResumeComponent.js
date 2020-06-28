@@ -1,7 +1,5 @@
 import React  from 'react';
-import City from '../Base/City';
-import Avatar from '../Avatar';
-import Library from '../Library';
+import ProgressBar from '../ProgressBar';
 import {
     ResumeS
 } from './Resume';
@@ -10,19 +8,21 @@ import {
 const portfolioLogo = require('../../images/portfolio.png');
 const graduationLogo = require('../../images/graduation.png');
 const codeLogo = require('../../images/code.png');
+const interestsLogo = require('../../images/star.png');
+const bookLogo = require('../../images/book.png');
+const travelLogo = require('../../images/plane.png');
+const gameLogo = require('../../images/vr-gaming.png');
+const artLogo = require('../../images/edit-tools.png');
+const musicLogo = require('../../images/headset.png');
+const downloadLogo = require('../../images/download.png');
 
-const Resume = () => {
+const OnlineCV = () => {
  
 
     
     return(
-
-        <City>
-            <Library position={{left:'1.5em'}} />
- 
-            <Avatar/> 
             <ResumeS>
-                <div className="resume">
+               <div className="resume">
                     <div className="func">
                         <div className="work">
                             <h3><i><img src={portfolioLogo}/></i>Experience</h3>
@@ -44,71 +44,58 @@ const Resume = () => {
                         <div className="skills-prog">
                             <h3><i><img src={codeLogo} alt="work"/></i>Programming Skills</h3>
                             <ul>
-                                <li><span>HTML5</span>
-                                    <div className="progress"></div>
-                                </li>
-                                <li  ><span>CSS3 & SCSS</span>
+                                <li><span className="label">HTML5</span>
+                                <span className="progress">
+                                    <ProgressBar barWidth="50" barColor='#78daf9' barHoverColor='#78f9f9' width='90'/>
+                                </span>
 
                                 </li>
-                                <li  ><span>JavaScript</span>
+                                <li  ><span className="label">CSS3 & SCSS</span>
+                                <span className="progress">
+                                    <ProgressBar barWidth="50" barColor='#78daf9' barHoverColor='#78f9f9' width='90'/>
+                                </span>
 
                                 </li>
-                                <li  ><span>jQuery</span>
+                                <li  ><span className="label">JavaScript</span>
+                                <span className="progress">
+                                    <ProgressBar barWidth="50" barColor='#78daf9' barHoverColor='#78f9f9' width='90'/>
+                                    </span>
 
- 
                                 </li>
-                                <li  id="aaaa"><span>jQuery</span>
+                                <li  >
+                                    <span className="label">jQuery</span>
+                                    <span className="progress">
+                                        <ProgressBar barWidth="50" barColor='#78daf9' barHoverColor='#78f9f9' width='90'/>
+                                    </span>
 
  
                                 </li>
                             </ul>
                         </div>
-                       {/* <div className="skills-soft">
-                        <h3><i className="fas fa-bezier-curve"></i>Software Skills</h3>
-                        <ul>
-                        <li data-percent="90">
-                            <svg viewBox="0 0 100 100">
-                            <circle cx="50" cy="50" r="45"></circle>
-                            <circle className="cbar" cx="50" cy="50" r="45"></circle>
-                            </svg><span>Illustrator</span><small></small>
-                        </li>
-                        <li data-percent="75">
-                            <svg viewBox="0 0 100 100">
-                            <circle cx="50" cy="50" r="45"></circle>
-                            <circle className="cbar" cx="50" cy="50" r="45"></circle>
-                            </svg><span>Photoshop</span><small></small>
-                        </li>
-                        <li data-percent="85">
-                            <svg viewBox="0 0 100 100">
-                            <circle cx="50" cy="50" r="45"></circle>
-                            <circle className="cbar" cx="50" cy="50" r="45"></circle>
-                            </svg><span>InDesign</span><small></small>
-                        </li>
-                        <li data-percent="65">
-                            <svg viewBox="0 0 100 100">
-                            <circle cx="50" cy="50" r="45"></circle>
-                            <circle className="cbar" cx="50" cy="50" r="45"></circle>
-                            </svg><span>Dreamweaver</span><small></small>
-                        </li>
-                        </ul>
-                    </div>
-                    <div className="interests">
-                        <h3><i className="fas fa-star"></i>Interests</h3>
-                        <div className="interests-items">
-                        <div className="art"><i className="fas fa-palette"></i><span>Art</span></div>
-                        <div className="art"><i className="fas fa-book"></i><span>Books</span></div>
-                        <div className="movies"><i className="fas fa-film"></i><span>Movies</span></div>
-                        <div className="music"><i className="fas fa-headphones"></i><span>Music</span></div>
-                        <div className="games"><i className="fas fa-gamepad"></i><span>Games</span></div>
+         
+                        <div className="interests">
+                            <h3><i><img src={interestsLogo} alt="interest"/></i>Interests</h3>
+                            <div className="interests-items">
+                                 <div className="art"><i><img src={artLogo} alt="interest"/></i><span>Art</span></div>
+                                <div className="art"><i><img src={bookLogo} alt="interest"/></i><span>Books</span></div>
+                                <div className="movies"><i><img src={travelLogo} alt="interest"/></i><span>travel</span></div>
+                                <div className="music"><i><img src={musicLogo} alt="interest"/></i><span>Music</span></div>
+                                <div className="games"><i><img src={gameLogo} alt="interest"/></i><span>Games</span></div>
+                            </div>
                         </div>
-                        </div> */}
+ 
+                        </div>
+                    <div className="pdf-section">
+                        <span>if you wish to get my  fully detailed cv you can dowload it here</span>
+                        <a href="path_to_file" download="proposed_file_name"><i><img src={downloadLogo} alt="interest"/></i><span>Download</span></a>
+                         
                     </div>
-                </div>
+                    </div>
             </ResumeS>
-        </City>
+
        
     );
 }
 
 
-export default Resume;
+export default OnlineCV;
