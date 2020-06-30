@@ -11,7 +11,7 @@ const OverFloor= styled.div`
 `;
 const Floor= styled.div`
     height: 18vh;
-    position: absolute;
+    position: relative;
     width: 100%;
     background: linear-gradient(to bottom, #8cb44b, #36471b);
 `;

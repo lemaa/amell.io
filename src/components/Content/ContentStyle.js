@@ -50,7 +50,7 @@ const ContentSection = styled.div`
     }
     @media (max-width: 768px) {
         left: 1em;
-        top: -15em;
+        top: ${props => props.position.topMobile ? props.position.topMobile : '-15em'};
         width: 90%;
         &::after{
             left: 12em;

@@ -13,7 +13,7 @@ const Resume = (props) => {
         <City>
             <Library  position={{left:'1.5em'}}/>
             <Avatar move={false}/> 
-            <Content position={{left: '12em', bottom: '25em'}}>
+            <Content position={{left: '12em', bottom: '25em', topMobile:'-29em'}}>
                 <OnlineResume/>
             </Content>
         </City>

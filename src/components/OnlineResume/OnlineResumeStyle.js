@@ -20,10 +20,18 @@ const OnlineResumeSection = styled.div`
 const WorkExperience = styled.div`
     width: 48%;
     margin: 0 4% 15px 0;
+    @media (max-width: 768px) {
+        width: 100%;
+        margin: 0;
+
+    }
       
 `;
 const EducationExperience = styled.div`
-  width: 48%;
+    width: 48%;
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 `;
 const ProgrammingSkills = styled.div`
     clear: both;

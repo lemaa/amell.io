@@ -2,6 +2,8 @@ import React , {useRef} from 'react';
 import Cloud from '../Cloud';
 import Mountain from '../Mountain';
 import Sun from '../Sun';
+import Tree from '../Tree';
+import Flower from '../Flower';
 import {
     Sky,  
     OverFloor,
@@ -66,7 +68,26 @@ const City = (props) => {
             <OverFloor>
                  {props.children}
             </OverFloor>
-            <Floor></Floor>
+            <Floor className='floor'>
+            <Flower  size={"small"} position={{left: "1em", top:"2em"}} color={"#6e77e8"} roundColor={"#adb1e6"}></Flower>
+            <Flower  size={"small"} position={{left: "5em", top:"4em"}}  ></Flower>
+            <Flower  size={"small"} position={{left: "16em", bottom:"5em"}} roundColor={"#ffcf1f"}></Flower>
+            <Flower  size={"small"} position={{left: "20em", bottom:"1em"}}></Flower>
+            <Flower  size={"small"} position={{left: "24em", bottom:"5em"}} color={"#6e77e8"} roundColor={"#adb1e6"}></Flower>
+            <Tree form={"triple-leaf"} size={"big"} color={"green"} position={{left: "20em", bottom: "15vh"}}></Tree>
+            <Flower  size={"small"} position={{left: "28em", bottom:"1em"}} color={"#6e77e8"} roundColor={"#adb1e6"}></Flower>
+            <Flower  size={"small"} position={{left: "34em", bottom:"5em"}} roundColor={"#ffcf1f"}></Flower>
+            <Flower  size={"small"} position={{left: "40em", bottom:"1em"}}></Flower>
+            <Flower  size={"small"} position={{left: "45em", bottom:"5em"}} color={"#6e77e8"} roundColor={"#adb1e6"}></Flower>
+            <Tree form={"triple-leaf"} size={"big"} color={"green"} position={{left: "48em", bottom: "3em"}}></Tree>
+            <Tree form={"triple-leaf"} size={"big"} color={"green"} position={{left: "75em", bottom: "6em"}}></Tree>
+            <Flower  size={"small"} position={{left: "50em", bottom:"1em"}}></Flower>
+            <Flower  size={"small"} position={{left: "55em", bottom:"5em"}} roundColor={"#ffcf1f"}></Flower>
+            <Flower  size={"small"} position={{left: "63em", bottom:"1em"}} color={"#6e77e8"} roundColor={"#adb1e6"}></Flower>
+            <Flower  size={"small"} position={{left: "64em", bottom:"5em"}} roundColor={"#ffcf1f"}></Flower>
+            <Flower  size={"small"} position={{left: "70em", bottom:"4em"}} roundColor={"#ffcf1f"}></Flower>
+            <Flower  size={"small"} position={{left: "75em", bottom:"1em"}}></Flower>
+            </Floor>
          </div> 
 
     )
