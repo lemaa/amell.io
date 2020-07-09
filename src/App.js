@@ -1,7 +1,7 @@
 import React from 'react';
+
 import {
     BrowserRouter,
-    Link,
     Route,
     Switch,
     withRouter
@@ -10,6 +10,7 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Home from './containers/Home';
 import Contact from './containers/Contact';
 import Resume from './containers/Resume';
+import NotFound from './containers/NotFound';
 import { Global } from './Style';
 
 const AnimatedSwitch = withRouter(({ location }) => (
@@ -19,7 +20,7 @@ const AnimatedSwitch = withRouter(({ location }) => (
           <Route path="/" component={Home} exact />
           <Route path="/contact" component={Contact} />
           <Route path="/resume" component={Resume} />
-          {/* <Route path="/resume" component={NotFound} /> */}
+          <Route path="*" component={NotFound} />
         </Switch>
       </CSSTransition>
     </TransitionGroup>

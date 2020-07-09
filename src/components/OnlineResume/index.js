@@ -1,4 +1,6 @@
 import React  from 'react';
+import { useTranslation } from 'react-i18next';
+
 import Title from '../Title';
 import Timeline from '../Timeline';
 import {
@@ -23,37 +25,40 @@ const musicLogo = require('../../images/headset.png');
 const downloadLogo = require('../../images/download.png');
 
 const OnlineResume = () => {
+
+    const { t, i18n } = useTranslation();   
+
     const WorkItems =[
         {
-            "label": "Full-stack web developer",
+            "label":  t('Position'),
             "content": { "text": "FrenchCo"},
-            "dates": "May 2018 - Now"
+            "dates": t('May') +" 2018 - " + t('Now')
           },
           {
-            "label": "Full-stack web developer",
+            "label": t('Position'),
             "content": {  "text": "IMH-Informatique"},
-            "dates": "February 2017 - May 2018"
+            "dates":  t('February') +" 2017 - " + t('May') +" 2018 "
           },
           {
-            "label": "Full-stack web developer",
+            "label": t('Position'),
             "content": { "text": "Mcube Technologies"},
-            "dates": "February 2016 - February 2017"
+            "dates":  t('February') +" 2016 - " + t('February') +" 2017 "
           } 
         ];
     const EducationItems =[
         {
-            "label": "Computer engineering",
-            "content": { "text": "National engineering school of Carthage"},
+            "label": t('DiplomaOne'),
+            "content": { "text": t('ShcoolOne')},
             "dates": "2013 - 2016"
           },
           {
-            "label": "Preparatory cycle of engineering studies",
-            "content": {"text": "Preparatory institute for engineering studies of Bizerte"},
+            "label": t('DiplomaTwo'),
+            "content": {"text": t('ShcoolTwo')},
             "dates": "2010 – 2013"
           },
           {
-            "label": "Bachelor in mathematics",
-            "content": {"text": "Secondary school of Ghardimaou"},
+            "label": t('DiplomaThree'),
+            "content": {"text": t('ShcoolThree')},
             "dates": "2010"
           } 
         ];
@@ -86,43 +91,45 @@ const OnlineResume = () => {
                             },
                         },
         ];
-
     const InterestsItems =[
         {"content": {
             "imageIcon": artLogo,
-            "description": "Art",
+            "description": t('Interests-0'),
         }},
         {"content": {
             "imageIcon": bookLogo,
-            "description": "Books",
+            "description": t('Interests-1'),
         }},
         {"content": {
             "imageIcon":travelLogo,
-            "description": "travel",
+            "description": t('Interests-2'),
         }},
         {"content": {
             "imageIcon": musicLogo,
-            "description": "Music",
+            "description": t('Interests-3'),
         }},
         {"content": {
             "imageIcon": gameLogo,
-            "description": "Games",
+            "description": t('Interests-4'),
         }},                      
-    ];
-    const textMessage = "If you wish to get my  fully detailed cv you can dowload it here";
+        ];
 
-    return(
+        const experienceTitle = t('ExperienceTitle');
+        const educationTitle = t('EducationTitle');
+        const progSkillsTitle = t('ProgSkillsTitle');
+        const interestsTitle = t('InterestsTitle');
+        return(
             <OnlineResumeSection>
                 <WorkExperience>
-                    <Title icon={portfolioLogo} text={"Experience"} altImg ={"work-logo"}></Title>
+                    <Title icon={portfolioLogo} text={experienceTitle} altImg ={"work-logo"}></Title>
                     <Timeline timelineStyle={"timeline"} TimelineItems={WorkItems}/>
                 </WorkExperience>
                 <EducationExperience>
-                    <Title icon={graduationLogo} text={"Education"} altImg ={'education-logo'}></Title>
+                    <Title icon={graduationLogo} text={educationTitle} altImg ={'education-logo'}></Title>
                     <Timeline timelineStyle={"timeline"} TimelineItems={EducationItems}/>
                 </EducationExperience>
                 <ProgrammingSkills>
-                    <Title icon={codeLogo} text={"Programming Skills"} altImg ={'code-logo'}></Title>
+                    <Title icon={codeLogo} text={progSkillsTitle} altImg ={'code-logo'}></Title>
                     <Timeline 
                         timelineStyle={"progress"} 
                         TimelineItems={CodingSkillsItems} 
@@ -130,17 +137,17 @@ const OnlineResume = () => {
                         ContentWidth={'75%'}/>
                 </ProgrammingSkills>
                 <Interests>
-                    <Title icon={interestsLogo} text={"Interests"} altImg ={'interest-logo'}></Title>
+                    <Title icon={interestsLogo} text={interestsTitle} altImg ={'interest-logo'}></Title>
                     <Timeline 
                         timelineStyle={"icon"} 
                         TimelineItems={InterestsItems}
                     />
                 </Interests>
                 <ExtraText>
-                    {textMessage}
+                    {t('DownloadText')}
                     <DownloadButon href="path_to_file" download="proposed_file_name">
                         <i><img src={downloadLogo} alt="interest"/></i>
-                        <span>Download</span>
+                        <span>{t('DownloadButton')}</span>
                     </DownloadButon>
                  </ExtraText>
  

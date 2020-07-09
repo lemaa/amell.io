@@ -1,14 +1,5 @@
-import styled, { keyframes } from 'styled-components';
+import styled  from 'styled-components';
 
-const circle =  keyframes` 
-    from {
-      box-shadow: 0 0 0 0px #78daf9;
-    }
-    to {
-      box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
-    }
- `;
- 
 const OnlineResumeSection = styled.div`
     max-height: 24em;
     overflow: auto;

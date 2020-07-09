@@ -1,0 +1,27 @@
+{
+    "WelcomeText": "Hi. My name is amell. Nice to meet you.",
+    "ContactText": "If you wanna get in touch, talk to me about a work or just say hi you can reach me on one of these:",
+    "Position": "Full-stack web developer",
+    "DiplomaOne": "Computer engineering",
+    "DiplomaTwo": "Preparatory cycle of engineering studies",
+    "DiplomaThree": "Bachelor in mathematics",
+    "ShcoolOne": "National engineering school of Carthage",
+    "ShcoolTwo": "Preparatory institute for engineering studies of Bizerte",
+    "ShcoolThree": "Secondary school of Ghardimaou",
+    "Interests-0": "Art",
+    "Interests-1": "Books",
+    "Interests-2": "travel",
+    "Interests-3": "Music",
+    "Interests-4": "Games",
+    "May":"May",
+    "Now":"Now",
+    "February":"February",
+    "DownloadText": "If you wish to get my  fully detailed cv you can dowload it here",
+    "DownloadButton":"Download",
+    "ExperienceTitle":"Experience",
+    "EducationTitle":"Education",
+    "ProgSkillsTitle":"Programming Skills",
+    "InterestsTitle":"Interests"
+
+
+  }
