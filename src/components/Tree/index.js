@@ -12,6 +12,7 @@ const Tree = (props) => {
     const [form] = useState(props.form);
     const [size] = useState(props.size);
     const [color] = useState(props.color);
+    const [zIndex] = useState(props.zIndex);
     let leaf;
     
     if(form === 'round'){
@@ -28,7 +29,7 @@ const Tree = (props) => {
     }
 
     return (
-        <TreeSection color={color} position={position} size={size} className="tree">
+        <TreeSection color={color} position={position} size={size} zIndex={zIndex} className="tree">
             {leaf}
         </TreeSection> 
     )
@@ -45,6 +46,7 @@ Tree.propTypes = {
     form: PropTypes.oneOf(['triple-leaf', 'one-leaf', 'round']),
     size: PropTypes.oneOf(['extra-big', 'big', 'medium', 'small']),
     color: PropTypes.oneOf(['green', 'light-green', 'pink', 'purple']),
+    zIndex: PropTypes.number
 };
 
 export default Tree;

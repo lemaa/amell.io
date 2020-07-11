@@ -14,7 +14,7 @@ const purpleBorderBefore='transparent transparent #adb1e6 transparent' ;
     position: absolute;
     width: 10px;
     height: 30px;
-    z-index: 99;
+    z-index: ${props => props.zIndex ? props.zIndex : 'unset'};
     transform:  ${props => props.size==='extra-big' ? 'scale(2.5)' :props.size==='big' ? 'scale(1.7)' : props.size==='medium' ? ' scale(1.2)' : 'none'};  
     left: ${props => props.position.left ? props.position.left : 'unset'};  
     right: ${props => props.position.right ?  props.position.right  : 'unset'}; 

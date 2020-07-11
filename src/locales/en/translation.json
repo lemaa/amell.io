@@ -21,7 +21,10 @@
     "ExperienceTitle":"Experience",
     "EducationTitle":"Education",
     "ProgSkillsTitle":"Programming Skills",
-    "InterestsTitle":"Interests"
+    "InterestsTitle":"Interests",
+    "Resume":"Resume",
+    "Contact":"Contact",
+    "Home":"Home"
 
 
   }

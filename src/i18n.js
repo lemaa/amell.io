@@ -5,7 +5,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import translationEN from './locales/en/translation.json';
 import translationFR from './locales/fr/translation.json';
 
-// the translations
+ // the translations
 const resources = {
   en: {
     translation: translationEN
@@ -21,7 +21,10 @@ i18n
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
     resources,
-    lng: "en",
+    detection: {
+        order: ['navigator'],
+    },
+    whitelist: ['fr', 'en'],
     fallbackLng: 'en',
     keySeparator: false, // we do not use keys in form messages.welcome
     interpolation: {
