@@ -26,7 +26,25 @@ const EducationExperience = styled.div`
 `;
 const ProgrammingSkills = styled.div`
     clear: both;
-     width:100%;
+    width:100%;
+        .container-skills{
+            width: 100%;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-flow: row wrap;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+            .back-end{
+                width: 48%;
+                margin: 0 4% 15px 0;
+            }
+            .front-end{
+                width: 48%;
+
+            }
+         }
 `;
 const Interests = styled.div`
     clear: both;
@@ -36,8 +54,7 @@ const ExtraText = styled.div`
     width: 100%;
     font-size: 14px;
     font-family: MuseoModernoBold;
-    margin-top: 25px;
- 
+    margin-bottom: 20px; 
 `;
 const DownloadButon = styled.a`
     background-color: #2093ed;

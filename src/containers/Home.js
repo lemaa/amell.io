@@ -19,9 +19,9 @@ const Home = (props ) => {
                         </span>
     return (
         <City>
-            <House position={{left:'1.5em'}} doorAnimation={false}/>
-            <Avatar move= {false}/>
-            <Content typingStartDelay={500} textMessage={textMessage} typingSpeed={10} position={{left: '8em', top: '-11em'}}/>
+            <House position={{left:'1.5em'}} doorAnimation={true}/>
+            <Avatar move= {true}/>
+            <Content typingStartDelay={1500} textMessage={textMessage} typingSpeed={10} position={{left: '8em', top: '-11em'}}/>
         </City>
         );
 };

@@ -105,7 +105,7 @@ const FrontDoor= styled.div`
     right: 0;
     transform-origin: left;
     z-index: 9999;
-    animation: ${props => props.animation ===true ?  css`${doorOpen} 1s 1 forwards 1s` : 'none'};
+    animation: ${props => props.doorAnimation ===true ?  css`${doorOpen} 1s 1 forwards 1s` : 'none'};
 
     
 `;

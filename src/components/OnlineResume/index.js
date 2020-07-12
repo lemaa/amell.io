@@ -62,35 +62,101 @@ const OnlineResume = () => {
             "dates": "2010"
           } 
         ];
-    const CodingSkillsItems =[
-            {
-                "label": "HTML5",
-                "content": {
-                    "progressPourcent": 50,
-                    "progressColor": "#78daf9",
-                    "progressHoverColor":"#78f9f9" ,
-                    "barWidth": 90
-                    },
+    const CodingBackendSkillsItems =[
+        {
+            "label": "PHP7",
+            "content": {
+                "progressPourcent": 80,
+                "progressColor": "#78daf9",
+                "progressHoverColor":"#78f9f9" ,
+                "barWidth": 90
                 },
-                {
-                    "label": "HTML5",
-                    "content": {
-                        "progressPourcent": 50,
-                        "progressColor": "#78daf9",
-                        "progressHoverColor":"#78f9f9" ,
-                        "barWidth": 90
-                        },
-                    },
-                    {
-                        "label": "HTML5",
-                        "content": {
-                            "progressPourcent": 50,
-                            "progressColor": "#78daf9",
-                            "progressHoverColor":"#78f9f9" ,
-                            "barWidth": 90
-                            },
-                        },
+        },
+        {
+            "label": "Zend",
+            "content": {
+                "progressPourcent": 80,
+                "progressColor": "#78daf9",
+                "progressHoverColor":"#78f9f9" ,
+                "barWidth": 90
+                },
+        },
+        {
+            "label": "NodeJs",
+            "content": {
+                "progressPourcent": 80,
+                "progressColor": "#78daf9",
+                "progressHoverColor":"#78f9f9" ,
+                "barWidth": 90
+                },
+        },
+        {
+            "label": "MYSQL",
+            "content": {
+                "progressPourcent": 80,
+                "progressColor": "#78daf9",
+                "progressHoverColor":"#78f9f9" ,
+                "barWidth": 90
+                },
+        },
+        {
+            "label": "PostgreSQL",
+            "content": {
+                "progressPourcent": 80,
+                "progressColor": "#78daf9",
+                "progressHoverColor":"#78f9f9" ,
+                "barWidth": 90
+                },
+        }
         ];
+    const CodingFrontendSkillsItems =[
+        {
+            "label": "Javascript",
+            "content": {
+                "progressPourcent": 80,
+                "progressColor": "#78daf9",
+                "progressHoverColor":"#78f9f9" ,
+                "barWidth": 90
+                },
+        },
+        {
+            "label": "Angular",
+            "content": {
+                "progressPourcent": 80,
+                "progressColor": "#78daf9",
+                "progressHoverColor":"#78f9f9" ,
+                "barWidth": 90
+                },
+        },
+        {
+            "label": "ReactJs",
+            "content": {
+                "progressPourcent": 80,
+                "progressColor": "#78daf9",
+                "progressHoverColor":"#78f9f9" ,
+                "barWidth": 90
+                },
+        },
+        {
+            "label": "HTML5",
+            "content": {
+                "progressPourcent": 80,
+                "progressColor": "#78daf9",
+                "progressHoverColor":"#78f9f9" ,
+                "barWidth": 90
+                },
+        },
+        {
+            "label": "CSS3",
+            "content": {
+                "progressPourcent": 80,
+                "progressColor": "#78daf9",
+                "progressHoverColor":"#78f9f9" ,
+                "barWidth": 90
+                },
+        }
+    ];
+
     const InterestsItems =[
         {"content": {
             "imageIcon": artLogo,
@@ -130,11 +196,24 @@ const OnlineResume = () => {
                 </EducationExperience>
                 <ProgrammingSkills>
                     <Title icon={codeLogo} text={progSkillsTitle} altImg ={'code-logo'}></Title>
-                    <Timeline 
-                        timelineStyle={"progress"} 
-                        TimelineItems={CodingSkillsItems} 
-                        labelWidth={'25%'} 
-                        ContentWidth={'75%'}/>
+                    <div className="container-skills">
+                        <div className="back-end">
+                            <div>Backend skills</div>
+                            <Timeline 
+                                timelineStyle={"progress"} 
+                                TimelineItems={CodingBackendSkillsItems} 
+                                labelWidth={'25%'} 
+                                ContentWidth={'75%'}/>
+                        </div>
+                        <div className="front-end">
+                            <div>Front-end skills</div>
+                            <Timeline 
+                                timelineStyle={"progress"} 
+                                TimelineItems={CodingFrontendSkillsItems} 
+                                labelWidth={'25%'} 
+                                ContentWidth={'75%'}/>
+                        </div>
+                     </div>
                 </ProgrammingSkills>
                 <Interests>
                     <Title icon={interestsLogo} text={interestsTitle} altImg ={'interest-logo'}></Title>

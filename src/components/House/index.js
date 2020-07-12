@@ -42,7 +42,7 @@ const House = (props) => {
                     <div className="vertical"></div>
                 </HouseWindow>
                 <HouseDoor>
-                    <FrontDoor className="frontdoor">
+                    <FrontDoor className="frontdoor" doorAnimation={doorAnimation}>
                         <Doorknob></Doorknob>
                     </FrontDoor>
                 </HouseDoor>
