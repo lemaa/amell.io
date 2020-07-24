@@ -7,6 +7,7 @@ const Sky = styled.div`
 
   
 const OverFloor= styled.div`
+    position: relative;
     height: 12vh;
 `;
 const Floor= styled.div`

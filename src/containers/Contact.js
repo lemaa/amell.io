@@ -12,7 +12,7 @@ const Contact = () => {
     return(
         
         <City>
-            <Telephone  position={{left:'1.5em'}}/>
+            <Telephone position={{left:'1.5em', bottom: '4em'}}/>
             <Avatar move={false}/> 
             <Content typingStartDelay={0} textMessage={t('ContactText')} typingSpeed={100} position={{left: '8em', top: '-11em'}}>
                 <SocialLinks email={true} skype={true} linkedin={true} facebook={true}></SocialLinks>

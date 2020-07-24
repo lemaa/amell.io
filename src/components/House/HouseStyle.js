@@ -42,7 +42,7 @@ const doorOpen = keyframes`
 `;
 
 const HouseSection = styled.div`
-    position: relative;
+    position: absolute;
     left: ${props => props.position.left ? props.position.left : 'unset'};  
     right: ${props => props.position.right ?  props.position.right  : 'unset'}; 
     top: ${props => props.position.top ? props.position.top : 'unset'};  

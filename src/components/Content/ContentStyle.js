@@ -20,7 +20,7 @@ const ContentSection = styled.div`
     width: 70%;
     opacity: ${props => props.animation === true ? '0' : '1'};
     animation: ${props => props.animation === true ? css`${display} 1s 1 forwards` : 'none'};
-    animation-delay: ${props =>  props.animationStartDelay ? props.animationStartDelay: '0s'};
+    animation-delay: ${props =>  props.animationStartDelay ? `${props.animationStartDelay}s`: '0s'};
     font-family: MuseoModerno;
     line-height: 1.7em;
     letter-spacing: 0.5px;

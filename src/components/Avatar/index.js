@@ -20,9 +20,10 @@ const Avatar = (props) => {
 
     const [animation] = useState(props.animation);
     const [position] = useState(props.position); //not done yet
+    const [startLeftPostionAnimation] = useState(props.startLeftPostionAnimation);
 
      return(
-        <AvatarSection position={position} animation={animation}> 
+        <AvatarSection position={position} animation={animation} startLeftPostionAnimation={startLeftPostionAnimation}> 
              <AvatarHead>
                 <Hair>
 			        <span className="right-side-fringe"></span>

@@ -5,7 +5,8 @@ const movingDefault = keyframes`
     0% {
         transform: scale(0.4);
         opacity: 1;
-        left: -13.5em;
+        // left: -13.5em;
+        left: ${props => props.startLeftPostionAnimation?`${props.startLeftPostionAnimation}em`: '-13.5em'}
 
     }
 
