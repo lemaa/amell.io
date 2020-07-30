@@ -9,6 +9,7 @@ const Content = (props) => {
     
     const [position] = useState(props.position);
     const [animation] = useState(props.animation);
+    const [height] = useState(props.height);
     const [animationStartDelay] = useState(props.animationStartDelay);
     const [typingStartDelay] = useState(props.typingStartDelay);
     const [typingSpeed] = useState(props.typingSpeed);
@@ -16,9 +17,9 @@ const Content = (props) => {
     const [finishedTyping, setFinishedTyping] = useState(false);
 
     const onFinishedTyping = () => setFinishedTyping(true);
-
+console.log(height);
 return(
-        <ContentSection  animation ={animation} animationStartDelay={animationStartDelay} position={position}> 
+        <ContentSection  animation ={animation} animationStartDelay={animationStartDelay} position={position} height={height}> 
             {textMessage && 
                 <Typing startDelay={typingStartDelay} speed={typingSpeed} onFinishedTyping={onFinishedTyping} >
                     {textMessage}

@@ -13,9 +13,9 @@ const Home = (props ) => {
 
 
          useEffect(() => {
-            const floor = document.getElementById("floor");
+            const floor = document.getElementById("frontdoor");
             let offset = floor.getBoundingClientRect();
-            sethousePostionTop(offset.top + offset.height/2);
+            sethousePostionTop(offset.left);
 
           });
     
@@ -29,14 +29,14 @@ const Home = (props ) => {
         <City>
             
             <House position={{left:'1.5em', bottom: '4em'}} doorAnimation={true}/>
-            {/* <Avatar animation= {true}/>
+            <Avatar animation= {true} startLeftPostionAnimation={4}/>
             <Content 
                 typingStartDelay={6500} 
                 animationStartDelay={6} 
                 textMessage={textMessage} 
                 typingSpeed={10} 
-                position={{left: '8em', top: '-11em'}}
-                animation={true}/> */}
+                position={{left: '15em', bottom: '3em', margin:'0 auto'}}
+                animation={true}/>
         </City>
         );
 };

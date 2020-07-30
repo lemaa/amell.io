@@ -5,7 +5,6 @@ const movingDefault = keyframes`
     0% {
         transform: scale(0.4);
         opacity: 1;
-        // left: -13.5em;
         left: ${props => props.startLeftPostionAnimation?`${props.startLeftPostionAnimation}em`: '-13.5em'}
 
     }
@@ -14,7 +13,7 @@ const movingDefault = keyframes`
  
         transform: scale(0.9);
         opacity: 1;
-        left: 9em;
+        left: 12em;
     }
 `;
 
@@ -34,12 +33,12 @@ const movingMobile = keyframes`
         left: 9em;
     }
 `;
- 
+
 const AvatarSection = styled.div`
-    left: ${props => props.animation ===true ? '-13.5em' : '9em'};  
-    position: relative;
-    top: 2em;
-    z-index: 9;
+    left: ${props => props.animation ===true ? `${props.startLeftPostionAnimation}em` : '12em'};  
+    position: absolute;
+    bottom: -2em;
+    z-index: 999;
     transform: ${props => props.animation ===true ? 'scale(0.4)' : 'scale(1)'};  
     opacity: ${props => props.animation ===true ? '0' : '1'};
     animation: ${props => props.animation ===true ? css`4s 1 forwards 2s ${movingDefault}` : 'none'};

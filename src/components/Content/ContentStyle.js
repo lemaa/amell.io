@@ -9,11 +9,12 @@ const display = keyframes`
 
     }
 `;
+ 
 const ContentSection = styled.div`
     float: left;
     padding: 7px;
     background: rgba(242, 249, 254, 0.88);
-    position: relative;
+    position: absolute;
     margin-right: 15px;
     border-radius: 10px;
     box-shadow: 0px 0px 3px 4px rgba(242, 249, 254, 0.28);
@@ -25,14 +26,14 @@ const ContentSection = styled.div`
     line-height: 1.7em;
     letter-spacing: 0.5px;
     text-align: center;
-    min-height: 10em;
-    max-height: 30em;
     z-index: 10;
     left: ${props => props.position.left ? props.position.left : 'unset'};  
     right: ${props => props.position.right ?  props.position.right  : 'unset'}; 
     top: ${props => props.position.top ? props.position.top : 'unset'};  
     bottom: ${props => props.position.bottom ? props.position.bottom : 'unset'};  
     margin: ${props => props.position.margin ? props.position.margin : 'unset'}; 
+    min-height: 10em;
+    height: ${props => props.height ? props.height : 'unset'}; 
 
 
 
@@ -48,9 +49,10 @@ const ContentSection = styled.div`
 	    border: 12px solid;
 	    border-color: rgba(242,249,254,0.88) transparent transparent rgba(242,249,254,0.88);
     }
-    @media (max-width: 768px) {
-        left: 1em;
-        top: ${props => props.position.topMobile ? props.position.topMobile : '-15em'};
+    @media (max-width: 920px) {
+        left: 0;
+        top: ${props => props.position.topMobile ? props.position.topMobile : '0'};
+        right: 0;
         width: 90%;
         &::after{
             left: 12em;

@@ -1,6 +1,5 @@
 import React , {useRef} from 'react';
 import { useTranslation } from 'react-i18next';
-import {Link} from 'react-router-dom';
 import MediaQuery from 'react-responsive';
 
 import Cloud from '../Cloud';
@@ -36,12 +35,7 @@ const City = (props) => {
                         position={{top: "1em", right: "2em"}}><TextLink to="/contact">{t('Contact')}</TextLink></Cloud>
             </Sky>
 
-                {/* <React.Fragment>
-                <MediaQuery maxDeviceWidth={1800} minDeviceWidth={768}>
 
-                </MediaQuery>
-
-                </React.Fragment> */}
                 
 
             <OverFloor>

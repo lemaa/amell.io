@@ -1,12 +1,12 @@
 import styled  from 'styled-components';
 
 const OnlineResumeSection = styled.div`
-    max-height: 24em;
+    max-height: 95%;
     overflow: auto;
     width: 100%;
     display: flex;
     flex-flow: row wrap;
-`;
+ `;
 
 const WorkExperience = styled.div`
     width: 48%;
