@@ -51,7 +51,7 @@ const ContentSection = styled.div`
     }
     @media (max-width: 920px) {
         left: 0;
-        top: ${props => props.position.topMobile ? props.position.topMobile : '0'};
+        top: ${props => props.position.topMobile ? props.position.topMobile : 'unset'};
         right: 0;
         width: 90%;
         &::after{

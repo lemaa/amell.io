@@ -80,7 +80,7 @@ const City = (props) => {
             </OverFloor>
             <Floor id='floor'>
             <MediaQuery maxDeviceWidth={768}>
-                <Tree form={"triple-leaf"} size={"big"} color={"green"} position={{left: "20em", bottom: "15vh"}} zIndex={99}></Tree>
+                <Tree form={"triple-leaf"} size={"big"} color={"green"} position={{left: "87vw", bottom: "15vh"}} zIndex={99}></Tree>
                 <Flower  size={"small"} position={{left: "10vw", top:"7vh", margin:"0 auto"}} color={"#6e77e8"} roundColor={"#adb1e6"}></Flower>
                 <Flower  size={"small"} position={{left: "30vw", top:"7vh", margin:"0 auto"}}  ></Flower>
                 <Flower  size={"small"} position={{left: "50vw", bottom:"5vh", margin:"0 auto"}} roundColor={"#ffcf1f"}></Flower>

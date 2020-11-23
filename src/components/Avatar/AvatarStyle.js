@@ -5,7 +5,7 @@ const movingDefault = keyframes`
     0% {
         transform: scale(0.4);
         opacity: 1;
-        left: ${props => props.startLeftPostionAnimation?`${props.startLeftPostionAnimation}em`: '-13.5em'}
+        left: 4em;
 
     }
 
@@ -22,7 +22,7 @@ const movingMobile = keyframes`
     0% {
         transform: scale(0.4);
         opacity: 1;
-        left: -3em;
+        left: 4em
 
     }
 
@@ -35,7 +35,7 @@ const movingMobile = keyframes`
 `;
 
 const AvatarSection = styled.div`
-    left: ${props => props.animation ===true ? `${props.startLeftPostionAnimation}em` : '12em'};  
+    left: ${props => props.animation ===true ? '4em' : '12em'};  
     position: absolute;
     bottom: -2em;
     z-index: 999;

@@ -17,18 +17,15 @@ const Resume = (props) => {
             <Avatar move={false}/> 
 
             {bigHeighs && 
-                <Content position={{left: '15em', bottom: '3em', margin:'0 auto',  topMobile:'-29em'}} height={'50vh'}>
+                <Content position={{left: '15em', bottom: '3em', margin:'0 auto'}} height={'50vh'}>
                     <OnlineResume/>
                 </Content>
             }
              {smallHeighs && 
-                <Content position={{left: '15em', bottom: '3em', margin:'0 auto',  topMobile:'-29em'}} height={'40vh'}>
+                <Content position={{left: '15em', bottom: '2em', margin:'0 auto'}} height={'45vh'}>
                     <OnlineResume/>
                 </Content>
             }
-            {/* <Content position={{left: '15em', bottom: '3em', margin:'0 auto',  topMobile:'-29em'}} >
-                <OnlineResume/>
-            </Content> */}
         </City>
         );
 };

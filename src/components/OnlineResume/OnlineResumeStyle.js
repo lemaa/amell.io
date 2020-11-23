@@ -39,9 +39,26 @@ const ProgrammingSkills = styled.div`
             .back-end{
                 width: 48%;
                 margin: 0 4% 15px 0;
+                @media (max-width: 768px) {
+                    width: 100%;
+                    margin: 0;
+                    .sub-title{
+                        text-align: left;
+                        padding-left: 25px;
+                    }
+                }
             }
             .front-end{
                 width: 48%;
+                @media (max-width: 768px) {
+                    width: 100%;
+                    .sub-title{
+                        text-align: left;
+                        padding-left: 25px;
+
+                    }
+            
+                }
 
             }
          }

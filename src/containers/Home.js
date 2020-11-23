@@ -22,8 +22,8 @@ const Home = (props ) => {
      const textMessage =
                         <span>
                             {t('WelcomeText')}
-                            <br/>I'm a person who loves challenge and always interested to learn new things.
-                            <br/>Curabitur magna neque, cursus ullamcorper velit.
+                            <br/> I am a full-stack software engineer with over 4 years of experience.
+                            <br/>I am passionate about building excellent software that improves the lives of those around me.
                         </span>
     return (
         <City>
@@ -34,7 +34,7 @@ const Home = (props ) => {
                 typingStartDelay={6500} 
                 animationStartDelay={6} 
                 textMessage={textMessage} 
-                typingSpeed={10} 
+                typingSpeed={50} 
                 position={{left: '15em', bottom: '3em', margin:'0 auto'}}
                 animation={true}/>
         </City>

@@ -17,7 +17,7 @@ const Content = (props) => {
     const [finishedTyping, setFinishedTyping] = useState(false);
 
     const onFinishedTyping = () => setFinishedTyping(true);
-console.log(height);
+
 return(
         <ContentSection  animation ={animation} animationStartDelay={animationStartDelay} position={position} height={height}> 
             {textMessage && 

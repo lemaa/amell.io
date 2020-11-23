@@ -84,7 +84,7 @@ const OnlineResume = () => {
         {
             "label": "NodeJs",
             "content": {
-                "progressPourcent": 80,
+                "progressPourcent": 70,
                 "progressColor": "#78daf9",
                 "progressHoverColor":"#78f9f9" ,
                 "barWidth": 90
@@ -198,7 +198,7 @@ const OnlineResume = () => {
                     <Title icon={codeLogo} text={progSkillsTitle} altImg ={'code-logo'}></Title>
                     <div className="container-skills">
                         <div className="back-end">
-                            <div>Backend skills</div>
+                            <div className="sub-title">Backend skills</div>
                             <Timeline 
                                 timelineStyle={"progress"} 
                                 TimelineItems={CodingBackendSkillsItems} 
@@ -206,7 +206,7 @@ const OnlineResume = () => {
                                 ContentWidth={'75%'}/>
                         </div>
                         <div className="front-end">
-                            <div>Front-end skills</div>
+                            <div className="sub-title">Front-end skills</div>
                             <Timeline 
                                 timelineStyle={"progress"} 
                                 TimelineItems={CodingFrontendSkillsItems} 
@@ -224,7 +224,7 @@ const OnlineResume = () => {
                 </Interests>
                 <ExtraText>
                     {t('DownloadText')}
-                    <DownloadButon href="path_to_file" download="proposed_file_name">
+                    <DownloadButon href={`${process.env.PUBLIC_URL}/AmelFezaiCVFr.pdf`} download="AmelFezaiCv">
                         <i><img src={downloadLogo} alt="interest"/></i>
                         <span>{t('DownloadButton')}</span>
                     </DownloadButon>
