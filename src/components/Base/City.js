@@ -28,7 +28,7 @@ const City = (props) => {
             <Sky>
                 <Sun ref={sunRef} position={{top: "0", left: "1em"}} sunlines={true} /> 
                 <Cloud animation={true}
-                        position={{top: "0", left: "1em"}}><span><TextLink to="/">{t('Home')}</TextLink></span></Cloud>
+                        position={{top: "0", left: "1em"}}><span><TextLink to="/amell.io/">{t('Home')}</TextLink></span></Cloud>
                 <Cloud animation={true}
                         position={{top: "9em", left: "0", right:"0", margin: "0 auto"}}><TextLink to="/amell.io/resume">{t('Resume')}</TextLink></Cloud>
                 <Cloud animation={true}
