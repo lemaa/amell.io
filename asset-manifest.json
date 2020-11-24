@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/public/static/css/main.78400dd4.chunk.css",
+    "main.js": "/public/static/js/main.abe19f45.chunk.js",
+    "main.js.map": "/public/static/js/main.abe19f45.chunk.js.map",
+    "runtime-main.js": "/public/static/js/runtime-main.e4b6a4d4.js",
+    "runtime-main.js.map": "/public/static/js/runtime-main.e4b6a4d4.js.map",
+    "static/js/2.d8590ffb.chunk.js": "/public/static/js/2.d8590ffb.chunk.js",
+    "static/js/2.d8590ffb.chunk.js.map": "/public/static/js/2.d8590ffb.chunk.js.map",
+    "index.html": "/public/index.html",
+    "precache-manifest.a2a60b675cecbb138c926147e875f6b5.js": "/public/precache-manifest.a2a60b675cecbb138c926147e875f6b5.js",
+    "service-worker.js": "/public/service-worker.js",
+    "static/css/main.78400dd4.chunk.css.map": "/public/static/css/main.78400dd4.chunk.css.map",
+    "static/js/2.d8590ffb.chunk.js.LICENSE.txt": "/public/static/js/2.d8590ffb.chunk.js.LICENSE.txt",
+    "static/media/MuseoModerno-Bold.ttf": "/public/static/media/MuseoModerno-Bold.2a5d5ada.ttf",
+    "static/media/MuseoModerno-VariableFont_wght.ttf": "/public/static/media/MuseoModerno-VariableFont_wght.00c7fc7f.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e4b6a4d4.js",
+    "static/js/2.d8590ffb.chunk.js",
+    "static/css/main.78400dd4.chunk.css",
+    "static/js/main.abe19f45.chunk.js"
+  ]
+}
