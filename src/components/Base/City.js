@@ -30,9 +30,9 @@ const City = (props) => {
                 <Cloud animation={true}
                         position={{top: "0", left: "1em"}}><span><TextLink to="/">{t('Home')}</TextLink></span></Cloud>
                 <Cloud animation={true}
-                        position={{top: "9em", left: "0", right:"0", margin: "0 auto"}}><TextLink to="/resume">{t('Resume')}</TextLink></Cloud>
+                        position={{top: "9em", left: "0", right:"0", margin: "0 auto"}}><TextLink to="/amell.io/resume">{t('Resume')}</TextLink></Cloud>
                 <Cloud animation={true}
-                        position={{top: "1em", right: "2em"}}><TextLink to="/contact">{t('Contact')}</TextLink></Cloud>
+                        position={{top: "1em", right: "2em"}}><TextLink to="/amell.io/contact">{t('Contact')}</TextLink></Cloud>
             </Sky>
 
 
