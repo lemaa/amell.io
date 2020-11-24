@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/amell.io/precache-manifest.f831097d3e169bc58c61385d1036e35d.js"
+  "/amell.io/precache-manifest.1c75232a95f2565c85e63be0dc22ed4d.js"
 );
 
 self.addEventListener('message', (event) => {

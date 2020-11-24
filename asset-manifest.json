@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/amell.io/static/css/main.78400dd4.chunk.css",
-    "main.js": "/amell.io/static/js/main.158d67e2.chunk.js",
-    "main.js.map": "/amell.io/static/js/main.158d67e2.chunk.js.map",
+    "main.js": "/amell.io/static/js/main.d6477063.chunk.js",
+    "main.js.map": "/amell.io/static/js/main.d6477063.chunk.js.map",
     "runtime-main.js": "/amell.io/static/js/runtime-main.50f47345.js",
     "runtime-main.js.map": "/amell.io/static/js/runtime-main.50f47345.js.map",
     "static/js/2.05845874.chunk.js": "/amell.io/static/js/2.05845874.chunk.js",
     "static/js/2.05845874.chunk.js.map": "/amell.io/static/js/2.05845874.chunk.js.map",
     "index.html": "/amell.io/index.html",
-    "precache-manifest.f831097d3e169bc58c61385d1036e35d.js": "/amell.io/precache-manifest.f831097d3e169bc58c61385d1036e35d.js",
+    "precache-manifest.1c75232a95f2565c85e63be0dc22ed4d.js": "/amell.io/precache-manifest.1c75232a95f2565c85e63be0dc22ed4d.js",
     "service-worker.js": "/amell.io/service-worker.js",
     "static/css/main.78400dd4.chunk.css.map": "/amell.io/static/css/main.78400dd4.chunk.css.map",
     "static/js/2.05845874.chunk.js.LICENSE.txt": "/amell.io/static/js/2.05845874.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.50f47345.js",
     "static/js/2.05845874.chunk.js",
     "static/css/main.78400dd4.chunk.css",
-    "static/js/main.158d67e2.chunk.js"
+    "static/js/main.d6477063.chunk.js"
   ]
 }
