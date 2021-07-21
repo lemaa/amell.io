@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "173646a256aa32882516b1576035e24e",
+    "revision": "49df95b46f0040f29e454d8f9924858b",
     "url": "/amell.io/index.html"
   },
   {
-    "revision": "56d6c38e831c2b58f9ca",
+    "revision": "76b29840527346a32bd6",
     "url": "/amell.io/static/css/main.78400dd4.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/amell.io/static/js/2.05845874.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "56d6c38e831c2b58f9ca",
-    "url": "/amell.io/static/js/main.3dbe0af4.chunk.js"
+    "revision": "76b29840527346a32bd6",
+    "url": "/amell.io/static/js/main.94ce1d6e.chunk.js"
   },
   {
     "revision": "4b2891af23198a9903c7",
