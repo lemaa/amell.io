@@ -22,8 +22,10 @@ const Home = (props ) => {
      const textMessage =
                         <span>
                             {t('WelcomeText')}
-                            <br/> I am a full-stack software engineer with over 4 years of experience.
-                            <br/>I am passionate about building excellent software that improves the lives of those around me.
+                            <br /> {t('FirstDescriptionText')}
+                            <br /> {t('thirdDescriptionText')}
+                            <br />
+             
                         </span>
     return (
         <City>

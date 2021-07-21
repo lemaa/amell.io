@@ -1,5 +1,8 @@
 {
-    "WelcomeText": "Hi. I am Amel, welcome to my website.",
+    "WelcomeText": "Hello. Je suis Amel, bienvenue chez moi.",
+    "FirstDescriptionText": "Je suis une développeuse full-stack avec plus de 4 ans d’expérience dans le développement web.",
+    "SecondDescriptionText": "Autonome de nature, je peux travailler seule ou en groupe, étant également capable de m’adapter à un environnement que je ne connais pas.",
+    "thirdDescriptionText": "Toujours à la pointe des nouvelle technologies , j'aime relever les défis et cherche à améliorer les projets au maximum pour livrer des applications performantes qui satisfont au mieux les besoins des clients.",
     "ContactText": "Si vous voulez entrer en contact avec moi, parlez-moi d'un travail ou dites simplement salut, vous pouvez toujours me joindre sur:",
     "Position": "Développeur web full-stack",
     "DiplomaOne": "Ingénieur Informatique ",
